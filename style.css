@@ -3,6 +3,9 @@ body{
     margin: 0px;
 }
 
+.pp{
+    font-size: 14px;
+}
 .a{
     color: white;
     text-decoration: none;
@@ -58,10 +61,11 @@ nav{
 }
 
 @media (max-width: 999px) {
-    body{
-        overflow-x: hidden;
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
     }
-    
     .nav-list{
         position: absolute;
         top: 17vh;
@@ -80,6 +84,31 @@ nav{
     }
     .mobile-menu{
         display: block;
+    }
+   
+    
+    .mobile-menu {
+        cursor: pointer;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        
+    }
+    
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        display: none; /* Inicialmente escondido */
+        text-align: center;
+        
+    }
+    
+    .nav-list.active {
+        display: block; /* Mostra a lista quando ativa */
+    }
+    
+    .no-scroll {
+        overflow: hidden; /* Remove a rolagem da página */
     }
     
 }
@@ -179,6 +208,7 @@ transform: rotate(-45deg) translate(-8px, 8px);
     padding: 10px 20px;
     color: #217B96;
     font-size: 45px;
+    text-transform: uppercase;
    }
 
    .h111{
